@@ -2,9 +2,11 @@ package com.sinan.hadisimvar.data.repository;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
 import com.sinan.hadisimvar.data.remote.RetrofitClient;
 import com.sinan.hadisimvar.data.remote.model.PrayerTimesResponse;
 import com.sinan.hadisimvar.data.remote.model.Timings;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

@@ -9,10 +9,12 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.RemoteViews;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.AppDatabase;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.ui.landing.LandingActivity;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -61,7 +63,7 @@ public class HadithWidget extends AppWidgetProvider {
     }
 
     private void loadRandomHadith(Context context, RemoteViews views, AppWidgetManager appWidgetManager,
-            int appWidgetId) {
+                                  int appWidgetId) {
         Handler handler = new Handler(Looper.getMainLooper());
 
         executor.execute(() -> {

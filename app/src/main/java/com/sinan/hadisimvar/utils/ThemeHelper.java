@@ -2,6 +2,7 @@ package com.sinan.hadisimvar.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+
 import com.sinan.hadisimvar.R;
 
 public class ThemeHelper {

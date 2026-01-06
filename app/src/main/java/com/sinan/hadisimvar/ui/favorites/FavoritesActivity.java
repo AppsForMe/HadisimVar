@@ -2,9 +2,11 @@ package com.sinan.hadisimvar.ui.favorites;
 
 import android.os.Bundle;
 import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.databinding.ActivityFavoritesBinding;
@@ -23,14 +25,8 @@ public class FavoritesActivity extends BaseActivity {
         binding = ActivityFavoritesBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Toolbar setup
-        setSupportActionBar(binding.toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-        }
-        binding.toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
-        binding.toolbar.setNavigationOnClickListener(v -> finish());
+        // Geri butonu setup
+        binding.btnBack.setOnClickListener(v -> finish());
 
         viewModel = new ViewModelProvider(this).get(FavoritesViewModel.class);
 

@@ -1,11 +1,14 @@
 package com.sinan.hadisimvar.ui.favorites;
 
 import android.app.Application;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
+
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.data.repository.HadithRepository;
 import com.sinan.hadisimvar.ui.base.BaseViewModel;
+
 import java.util.List;
 
 public class FavoritesViewModel extends BaseViewModel {

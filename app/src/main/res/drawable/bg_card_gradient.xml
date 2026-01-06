@@ -1,19 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<?xml version="1.0" encoding="utf-8"?><!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- 📋 KART GRADİENT - Hadis listesi kartları                      -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Ana arka plan -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="#FCFFFFFF" android:centerColor="#F5FCFF" android:endColor="#EEF7FF" android:angle="135" android:type="linear" />
+            <gradient
+                android:angle="135"
+                android:centerColor="#F5FCFF"
+                android:endColor="#EEF7FF"
+                android:startColor="#FCFFFFFF"
+                android:type="linear" />
             <corners android:radius="20dp" />
         </shape>
     </item>
     <!-- Altın kenarlık highlight -->
-    <item android:top="0dp" android:left="0dp" android:right="0dp" android:bottom="0dp">
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
         <shape android:shape="rectangle">
-            <stroke android:width="1dp" android:color="@color/glass_border" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/glass_border" />
             <corners android:radius="20dp" />
         </shape>
     </item>

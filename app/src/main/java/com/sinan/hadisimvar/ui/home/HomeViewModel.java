@@ -3,15 +3,18 @@ package com.sinan.hadisimvar.ui.home;
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
+
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.data.remote.model.Timings;
 import com.sinan.hadisimvar.data.repository.HadithRepository;
 import com.sinan.hadisimvar.data.repository.PrayerTimeRepository;
 import com.sinan.hadisimvar.ui.base.BaseViewModel;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;

@@ -10,16 +10,19 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.content.Context;
 import android.widget.Toast;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProvider;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.databinding.ActivityMainBinding;
 import com.sinan.hadisimvar.ui.favorites.FavoritesActivity;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -307,7 +310,7 @@ public class MainActivity extends BaseActivity {
 
     /**
      * Miladi tarihi Hicri tarihe dönüştürür.
-     * 
+     *
      * @return int[] {yıl, ay, gün}
      */
     private int[] gregorianToHijri(int year, int month, int day) {
@@ -327,6 +330,6 @@ public class MainActivity extends BaseActivity {
         int hijriDay = l - (709 * hijriMonth) / 24;
         int hijriYear = 30 * n + j - 30;
 
-        return new int[] { hijriYear, hijriMonth, hijriDay };
+        return new int[]{hijriYear, hijriMonth, hijriDay};
     }
 }

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<?xml version="1.0" encoding="utf-8"?><!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- ✨ MİSTİK LACİVERT GRADIENT - Premium Arka Plan                -->
 <!-- Derin gece mavisinden açık laciverte geçiş                      -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -7,19 +6,33 @@
     <!-- Ana gradient arka plan -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="@color/gradient_start" android:centerColor="@color/gradient_center" android:endColor="@color/gradient_end" android:angle="135" android:type="linear" />
+            <gradient
+                android:angle="135"
+                android:centerColor="@color/gradient_center"
+                android:endColor="@color/gradient_end"
+                android:startColor="@color/gradient_start"
+                android:type="linear" />
         </shape>
     </item>
     <!-- Işık efekti overlay -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="#18FFD700" android:centerColor="#00FFD700" android:endColor="#08FFD700" android:angle="45" android:type="linear" />
+            <gradient
+                android:angle="45"
+                android:centerColor="#00FFD700"
+                android:endColor="#08FFD700"
+                android:startColor="#18FFD700"
+                android:type="linear" />
         </shape>
     </item>
     <!-- Üst parlaklık -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="#15FFFFFF" android:endColor="#00FFFFFF" android:angle="270" android:type="linear" />
+            <gradient
+                android:angle="270"
+                android:endColor="#00FFFFFF"
+                android:startColor="#15FFFFFF"
+                android:type="linear" />
         </shape>
     </item>
 </layer-list>

@@ -9,9 +9,12 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
+
 import com.sinan.hadisimvar.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -71,7 +74,7 @@ public class ShareActivity extends AppCompatActivity {
             File cachePath = new File(getCacheDir(), "images");
             cachePath.mkdirs(); // don't forget to make the directory
             FileOutputStream stream = new FileOutputStream(cachePath + "/image.png"); // overwrites this image every
-                                                                                      // time
+            // time
             bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
             stream.close();
 
@@ -83,7 +86,7 @@ public class ShareActivity extends AppCompatActivity {
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
                 shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION); // temp permission for receiving app to
-                                                                             // read this file
+                // read this file
                 shareIntent.setDataAndType(contentUri, getContentResolver().getType(contentUri));
                 shareIntent.putExtra(Intent.EXTRA_STREAM, contentUri);
                 startActivity(Intent.createChooser(shareIntent, "Paylaş"));

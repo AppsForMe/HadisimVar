@@ -8,46 +8,99 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
-    <application android:name=".HadisApp" android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.HadisimVar" android:usesCleartextTraffic="true" tools:targetApi="31">
+    <application
+        android:name=".HadisApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HadisimVar"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
 
-        <activity android:name=".ui.splash.SplashActivity" android:exported="true" android:theme="@style/Theme.HadisimVar.Splash">
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HadisimVar.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.home.MainActivity" android:exported="false" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:exported="false" />
 
-        <activity android:name=".ui.favorites.FavoritesActivity" android:exported="false" android:label="Favoriler" />
+        <activity
+            android:name=".ui.favorites.FavoritesActivity"
+            android:exported="false"
+            android:label="Favoriler" />
 
-        <activity android:name=".ui.allhadiths.AllHadithsActivity" android:exported="false" android:label="Tüm Hadisler" />
+        <activity
+            android:name=".ui.allhadiths.AllHadithsActivity"
+            android:exported="false"
+            android:label="Tüm Hadisler" />
 
-        <activity android:name=".ui.landing.LandingActivity" android:exported="false" android:label="Hoş Geldiniz" />
-        <activity android:name=".ui.prophets.ProphetsActivity" android:exported="false" android:label="Peygamberler" />
-        <activity android:name=".ui.settings.SettingsActivity" android:exported="false" android:label="Ayarlar" />
-        <activity android:name=".ui.detail.HadithDetailActivity" android:exported="false" android:label="Hadis Detayı" />
-        <activity android:name=".ui.topics.TopicsActivity" android:exported="false" android:label="Konu Fihristi" />
-        <activity android:name=".ui.share.ShareActivity" android:exported="false" android:label="Paylaşım Stüdyosu" />
+        <activity
+            android:name=".ui.landing.LandingActivity"
+            android:exported="false"
+            android:label="Hoş Geldiniz" />
+        <activity
+            android:name=".ui.prophets.ProphetsActivity"
+            android:exported="false"
+            android:label="Peygamberler" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:label="Ayarlar" />
+        <activity
+            android:name=".ui.detail.HadithDetailActivity"
+            android:exported="false"
+            android:label="Hadis Detayı" />
+        <activity
+            android:name=".ui.topics.TopicsActivity"
+            android:exported="false"
+            android:label="Konu Fihristi" />
+        <activity
+            android:name=".ui.share.ShareActivity"
+            android:exported="false"
+            android:label="Paylaşım Stüdyosu" />
 
-        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
         </provider>
 
-        <receiver android:name=".widget.HadithWidget" android:exported="false" android:label="Günün Hadisi">
+        <receiver
+            android:name=".widget.HadithWidget"
+            android:exported="false"
+            android:label="Günün Hadisi">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.sinan.hadisimvar.ACTION_REFRESH" />
             </intent-filter>
 
 
-            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hadith_widget_info" />
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hadith_widget_info" />
         </receiver>
 
         <!-- ═══════════════════════════════════════════════════════════════ -->
         <!-- 💰 GOOGLE ADMOB CONFIGURATION                                    -->
         <!-- ═══════════════════════════════════════════════════════════════ -->
-        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-6888537824609825~1672302521" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6888537824609825~1672302521" />
 
     </application>
 

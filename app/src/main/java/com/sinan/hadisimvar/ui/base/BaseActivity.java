@@ -1,8 +1,10 @@
 package com.sinan.hadisimvar.ui.base;
 
 import android.os.Bundle;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.sinan.hadisimvar.utils.ThemeHelper;
 
 public class BaseActivity extends AppCompatActivity {

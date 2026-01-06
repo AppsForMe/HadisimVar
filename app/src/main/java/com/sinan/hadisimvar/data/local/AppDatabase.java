@@ -1,15 +1,18 @@
 package com.sinan.hadisimvar.data.local;
 
 import android.content.Context;
+
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
 import com.sinan.hadisimvar.data.local.dao.HadithDao;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = { Hadith.class }, version = 2, exportSchema = false)
+@Database(entities = {Hadith.class}, version = 2, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract HadithDao hadithDao();
@@ -23,7 +26,7 @@ public abstract class AppDatabase extends RoomDatabase {
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            AppDatabase.class, "hadith_database")
+                                    AppDatabase.class, "hadith_database")
                             .fallbackToDestructiveMigration()
                             .build();
                 }

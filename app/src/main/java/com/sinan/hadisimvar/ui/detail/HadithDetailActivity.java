@@ -13,7 +13,9 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.lifecycle.ViewModelProvider;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.google.android.material.chip.Chip;
@@ -35,10 +37,8 @@ public class HadithDetailActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hadith_detail);
 
-        // Toolbar
-        findViewById(R.id.toolbar).setOnClickListener(v -> finish());
-        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        // Geri butonu setup
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 
         // Get ID
         if (getIntent() != null) {

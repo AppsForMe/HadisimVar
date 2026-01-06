@@ -7,7 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
+
 import androidx.core.app.NotificationCompat;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.ui.home.MainActivity;
 
@@ -43,7 +45,7 @@ public class NotificationHelper {
     }
 
     public static void showNotification(Context context, String title, String message, String channelId,
-            int notificationId) {
+                                        int notificationId) {
         Intent intent = new Intent(context, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 

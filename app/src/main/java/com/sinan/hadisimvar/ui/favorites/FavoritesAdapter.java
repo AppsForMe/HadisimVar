@@ -5,11 +5,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package com.sinan.hadisimvar.ui.prophets;
 
 import android.os.Bundle;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.ui.base.BaseActivity;
 

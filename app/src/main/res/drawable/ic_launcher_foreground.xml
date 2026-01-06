@@ -1,30 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Launcher Icon Foreground - Cami İkonu -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+<?xml version="1.0" encoding="utf-8"?><!-- Launcher Icon Foreground - Cami İkonu -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
 
     <!-- Görünür alan: 72dp merkez (18dp padding her yönde) -->
-    <group android:translateX="18" android:translateY="18">
+    <group
+        android:translateX="18"
+        android:translateY="18">
 
         <!-- Cami Kubbesi -->
-        <path android:fillColor="#FFD700" android:pathData="M36,45 Q36,20 36,20 Q36,10 36,10 L36,8 L36,10 Q36,20 36,45 Z
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M36,45 Q36,20 36,20 Q36,10 36,10 L36,8 L36,10 Q36,20 36,45 Z
                               M36,20 Q20,25 15,45 L15,50 L57,50 L57,45 Q52,25 36,20 Z" />
 
         <!-- Ana Kubbe -->
-        <path android:fillColor="#FFD700" android:pathData="M36,22 Q18,30 12,50 L60,50 Q54,30 36,22 Z" />
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M36,22 Q18,30 12,50 L60,50 Q54,30 36,22 Z" />
 
         <!-- Minare Sol -->
-        <path android:fillColor="#FFFFFF" android:pathData="M8,50 L8,25 L12,22 L16,25 L16,50 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M8,50 L8,25 L12,22 L16,25 L16,50 Z" />
 
         <!-- Minare Sağ -->
-        <path android:fillColor="#FFFFFF" android:pathData="M56,50 L56,25 L60,22 L64,25 L64,50 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M56,50 L56,25 L60,22 L64,25 L64,50 Z" />
 
         <!-- Kapı -->
-        <path android:fillColor="#0D1B3E" android:pathData="M30,50 L30,35 Q36,30 42,35 L42,50 Z" />
+        <path
+            android:fillColor="#0D1B3E"
+            android:pathData="M30,50 L30,35 Q36,30 42,35 L42,50 Z" />
 
         <!-- Hilal -->
-        <path android:fillColor="#FFFFFF" android:pathData="M36,8 Q33,11 36,14 Q39,11 36,8 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M36,8 Q33,11 36,14 Q39,11 36,8 Z" />
 
         <!-- Temel -->
-        <path android:fillColor="#FFD700" android:pathData="M5,50 L67,50 L67,55 L5,55 Z" />
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M5,50 L67,50 L67,55 L5,55 Z" />
     </group>
 </vector>

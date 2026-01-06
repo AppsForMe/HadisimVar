@@ -8,12 +8,15 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.cardview.widget.CardView;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.ui.base.BaseActivity;
 import com.sinan.hadisimvar.ui.landing.LandingActivity;
 import com.sinan.hadisimvar.utils.NotificationScheduler;
 import com.sinan.hadisimvar.utils.ThemeHelper;
+
 import java.util.Locale;
 
 public class SettingsActivity extends BaseActivity {
@@ -34,10 +37,8 @@ public class SettingsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // Toolbar setup
-        findViewById(R.id.toolbar).setOnClickListener(v -> finish());
-        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setNavigationOnClickListener(v -> finish());
+        // Geri butonu setup
+        findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 
         prefs = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
 

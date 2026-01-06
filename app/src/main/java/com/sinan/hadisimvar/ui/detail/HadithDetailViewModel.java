@@ -1,8 +1,10 @@
 package com.sinan.hadisimvar.ui.detail;
 
 import android.app.Application;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
+
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.data.repository.HadithRepository;
 import com.sinan.hadisimvar.ui.base.BaseViewModel;
@@ -22,7 +24,7 @@ public class HadithDetailViewModel extends BaseViewModel {
 
     /**
      * ID ile hadis getirir.
-     * 
+     *
      * @param id Hadis ID'si
      * @return LiveData olarak hadis
      */

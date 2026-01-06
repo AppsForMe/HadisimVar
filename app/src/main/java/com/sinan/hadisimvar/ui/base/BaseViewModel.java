@@ -1,6 +1,7 @@
 package com.sinan.hadisimvar.ui.base;
 
 import android.app.Application;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 

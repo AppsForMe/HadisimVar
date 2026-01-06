@@ -1,112 +1,479 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".ui.home.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.MainActivity">
 
     <!-- Header Area - Modern tasarım -->
     <!-- Geri Butonu - Belirgin tasarım -->
-    <LinearLayout android:id="@+id/btnBack" android:layout_width="wrap_content" android:layout_height="48dp" android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="14dp" android:layout_marginTop="16dp" android:layout_marginStart="12dp" android:background="@drawable/bg_back_button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_back_button"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_arrow_back" app:tint="@color/white" android:contentDescription="@null" />
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_back"
+            app:tint="@color/white" />
 
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="6dp" android:text="Geri" android:textColor="@color/white" android:textSize="14sp" android:fontFamily="sans-serif-medium" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Geri"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
     </LinearLayout>
 
     <!-- Ayarlar Butonu -->
-    <ImageView android:id="@+id/btnSettings" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="16dp" android:layout_marginEnd="12dp" android:padding="12dp" android:src="@drawable/ic_settings" app:tint="@color/white" android:background="@drawable/bg_icon_button" android:contentDescription="@null" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/btnSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_icon_button"
+        android:contentDescription="@null"
+        android:padding="12dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
 
 
     <!-- Tarih Alanı - Şık tipografi -->
-    <LinearLayout android:id="@+id/dateContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:layout_marginTop="20dp" app:layout_constraintEnd_toStartOf="@id/btnSettings" app:layout_constraintStart_toEndOf="@id/btnBack" app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/btnSettings"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16 Aralık 2025, Pazartesi" android:textColor="@color/white" android:textSize="17sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.02" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.02"
+            android:text="16 Aralık 2025, Pazartesi"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
 
-        <TextView android:id="@+id/tvHijriDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="25 Cemaziyelevvel 1447" android:textColor="#B0FFFFFF" android:textSize="13sp" android:fontFamily="sans-serif-light" />
+        <TextView
+            android:id="@+id/tvHijriDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-light"
+            android:text="25 Cemaziyelevvel 1447"
+            android:textColor="#B0FFFFFF"
+            android:textSize="13sp" />
     </LinearLayout>
 
     <!-- Hadith Card - Premium görünüm -->
-    <androidx.cardview.widget.CardView android:id="@+id/cardDailyHadith" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp" android:layout_marginTop="24dp" app:cardCornerRadius="24dp" app:cardElevation="12dp" app:cardBackgroundColor="@android:color/transparent" app:layout_constraintBottom_toTopOf="@+id/btnAllHadiths" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/dateContainer" app:layout_constraintVertical_bias="0.1">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDailyHadith"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAllHadiths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateContainer"
+        app:layout_constraintVertical_bias="0.1">
 
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="28dp" android:background="@drawable/bg_card_premium">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_premium"
+            android:padding="28dp">
 
             <!-- Başlık ve ikon -->
-            <LinearLayout android:id="@+id/headerRow" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/headerRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <View android:layout_width="4dp" android:layout_height="24dp" android:background="?attr/colorPrimary" />
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/colorPrimary" />
 
-                <TextView android:id="@+id/tvHadithTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:text="Günün Hadisi" android:textColor="?attr/colorPrimary" android:textSize="18sp" android:fontFamily="sans-serif-medium" android:letterSpacing="0.04" />
+                <TextView
+                    android:id="@+id/tvHadithTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.04"
+                    android:text="Günün Hadisi"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18sp" />
 
-                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_mosque" app:tint="?attr/colorPrimary" android:alpha="0.7" android:contentDescription="@null" />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:alpha="0.7"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_mosque"
+                    app:tint="?attr/colorPrimary" />
             </LinearLayout>
 
             <!-- Hadis İçeriği - Lacivert -->
-            <TextView android:id="@+id/tvHadithContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Yükleniyor..." android:textColor="@color/mistik_primary" android:textSize="19sp" android:lineSpacingMultiplier="1.4" android:fontFamily="serif" app:layout_constraintTop_toBottomOf="@id/headerRow" />
+            <TextView
+                android:id="@+id/tvHadithContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Yükleniyor..."
+                android:textColor="@color/mistik_primary"
+                android:textSize="19sp"
+                app:layout_constraintTop_toBottomOf="@id/headerRow" />
 
             <!-- Kaynak -->
-            <TextView android:id="@+id/tvHadithSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="" android:textColor="@color/mistik_accent_dark" android:textSize="14sp" android:fontFamily="sans-serif-light" android:textStyle="italic" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/tvHadithContent" />
+            <TextView
+                android:id="@+id/tvHadithSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="@color/mistik_accent_dark"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHadithContent" />
 
             <!-- Aksiyon Butonları - Modern tasarım -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="end" android:orientation="horizontal" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tvHadithSource">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHadithSource">
 
-                <com.google.android.material.button.MaterialButton android:id="@+id/btnShare" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="Paylaş" android:textColor="@color/mistik_primary" android:textSize="13sp" app:icon="@drawable/ic_share" app:iconTint="@color/mistik_primary" app:iconSize="18dp" app:cornerRadius="12dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnShare"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Paylaş"
+                    android:textColor="@color/mistik_primary"
+                    android:textSize="13sp"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_share"
+                    app:iconSize="18dp"
+                    app:iconTint="@color/mistik_primary" />
 
-                <com.google.android.material.button.MaterialButton android:id="@+id/btnFavorite" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginStart="8dp" android:textColor="@color/coral_red" android:textSize="13sp" app:icon="@drawable/ic_favorite_border" app:iconTint="@color/coral_red" app:iconSize="20dp" app:cornerRadius="12dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFavorite"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/coral_red"
+                    android:textSize="13sp"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_favorite_border"
+                    app:iconSize="20dp"
+                    app:iconTint="@color/coral_red" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <!-- Tüm Hadisler Butonu - Modern tasarım -->
-    <com.google.android.material.button.MaterialButton android:id="@+id/btnAllHadiths" style="@style/Widget.MaterialComponents.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginStart="20dp" android:layout_marginBottom="16dp" android:text="Tüm Hadisler" android:textColor="@color/white" android:textSize="13sp" android:fontFamily="sans-serif-medium" app:icon="@drawable/ic_menu_book" app:iconTint="@color/mistik_accent" app:iconSize="18dp" app:strokeColor="@color/glass_border" app:strokeWidth="1.5dp" app:cornerRadius="14dp" app:rippleColor="#30FFD700" app:layout_constraintBottom_toTopOf="@id/tvPrayerCity" app:layout_constraintStart_toStartOf="parent" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAllHadiths"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tüm Hadisler"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:cornerRadius="14dp"
+        app:icon="@drawable/ic_menu_book"
+        app:iconSize="18dp"
+        app:iconTint="@color/mistik_accent"
+        app:layout_constraintBottom_toTopOf="@id/tvPrayerCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#30FFD700"
+        app:strokeColor="@color/glass_border"
+        app:strokeWidth="1.5dp" />
 
     <!-- FAB - Coral Kırmızı -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabFavorites" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_favorite" app:backgroundTint="@color/coral_red" app:tint="@color/white" app:elevation="10dp" app:fabSize="normal" app:borderWidth="0dp" app:layout_constraintBottom_toTopOf="@id/tvPrayerCity" app:layout_constraintEnd_toEndOf="parent" android:contentDescription="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_favorite"
+        app:backgroundTint="@color/coral_red"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/tvPrayerCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
 
     <!-- Şehir Adı -->
-    <TextView android:id="@+id/tvPrayerCity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textColor="#C0FFFFFF" android:textStyle="normal" android:textSize="14sp" android:fontFamily="sans-serif-light" android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@id/adBannerContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvPrayerCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text=""
+        android:textColor="#C0FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/adBannerContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- ═══════════════════════════════════════════════════════════════ -->
     <!-- 💰 BANNER REKLAM ALANI                                         -->
     <!-- ═══════════════════════════════════════════════════════════════ -->
-    <FrameLayout android:id="@+id/adBannerContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:background="#15000000" app:layout_constraintBottom_toTopOf="@id/prayerTimesContainer" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <FrameLayout
+        android:id="@+id/adBannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#15000000"
+        app:layout_constraintBottom_toTopOf="@id/prayerTimesContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!-- Prayer Times Container - Modern grid -->
-    <LinearLayout android:id="@+id/prayerTimesContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="8dp" android:paddingVertical="12dp" android:weightSum="6" android:background="#20000000" app:layout_constraintBottom_toBottomOf="parent">
+    <LinearLayout
+        android:id="@+id/prayerTimesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20000000"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="12dp"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <!-- İmsak -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="İmsak" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvFajr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="İmsak"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvFajr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Güneş -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Güneş" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvSunrise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Güneş"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvSunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Öğle -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Öğle" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvDhuhr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Öğle"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvDhuhr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- İkindi -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="İkindi" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvAsr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="İkindi"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvAsr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Akşam -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Akşam" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvMaghrib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Akşam"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvMaghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Yatsı -->
-        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:gravity="center" android:background="@drawable/bg_prayer_item" android:paddingVertical="12dp" android:layout_margin="3dp">
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yatsı" android:textSize="11sp" android:textColor="@color/mistik_primary_light" android:fontFamily="sans-serif-medium"/>
-            <TextView android:id="@+id/tvIsha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="--:--" android:textStyle="bold" android:textColor="@color/mistik_accent" android:textSize="14sp" android:fontFamily="sans-serif-medium"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_prayer_item"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Yatsı"
+                android:textColor="@color/mistik_primary_light"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvIsha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="--:--"
+                android:textColor="@color/mistik_accent"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 

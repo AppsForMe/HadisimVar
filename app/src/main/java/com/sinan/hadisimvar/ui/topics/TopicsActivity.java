@@ -3,14 +3,17 @@ package com.sinan.hadisimvar.ui.topics;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.data.local.entity.Hadith;
 import com.sinan.hadisimvar.ui.allhadiths.AllHadithsActivity;
 import com.sinan.hadisimvar.ui.allhadiths.AllHadithsViewModel;
 import com.sinan.hadisimvar.ui.base.BaseActivity;
 import com.sinan.hadisimvar.databinding.ActivityTopicsBinding;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;

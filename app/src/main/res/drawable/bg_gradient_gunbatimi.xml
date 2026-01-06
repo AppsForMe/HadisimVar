@@ -2,12 +2,21 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="@color/gunbatimi_primary_dark" android:centerColor="@color/gunbatimi_primary" android:endColor="@color/gunbatimi_primary_light" android:angle="135" android:type="linear" />
+            <gradient
+                android:angle="135"
+                android:centerColor="@color/gunbatimi_primary"
+                android:endColor="@color/gunbatimi_primary_light"
+                android:startColor="@color/gunbatimi_primary_dark"
+                android:type="linear" />
         </shape>
     </item>
     <item>
         <shape android:shape="rectangle">
-            <gradient android:startColor="#12FFFFFF" android:endColor="#00FFFFFF" android:angle="135" android:type="linear" />
+            <gradient
+                android:angle="135"
+                android:endColor="#00FFFFFF"
+                android:startColor="#12FFFFFF"
+                android:type="linear" />
         </shape>
     </item>
 </layer-list>

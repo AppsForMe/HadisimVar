@@ -1,34 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_gradient_mistik" tools:context=".ui.landing.LandingActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_mistik"
+    tools:context=".ui.landing.LandingActivity">
 
     <!-- Logo - Altın Rengi -->
-    <ImageView android:id="@+id/ivLogo" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="72dp" android:src="@drawable/ic_mosque" app:tint="@color/mistik_accent" android:alpha="0.95" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="72dp"
+        android:alpha="0.95"
+        android:src="@drawable/ic_mosque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/mistik_accent" />
 
     <!-- Hoş Geldiniz - Beyaz -->
-    <TextView android:id="@+id/tvWelcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Hoş Geldiniz" android:textColor="@color/white" android:textSize="30sp" android:textStyle="bold" android:fontFamily="sans-serif-medium" android:letterSpacing="0.03" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.03"
+        android:text="Hoş Geldiniz"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo" />
 
     <!-- Hadisler Kartı - Glassmorphism -->
-    <androidx.cardview.widget.CardView android:id="@+id/cardHadiths" android:layout_width="0dp" android:layout_height="170dp" android:layout_marginHorizontal="24dp" android:layout_marginTop="48dp" app:cardCornerRadius="24dp" app:cardElevation="12dp" app:cardBackgroundColor="@android:color/transparent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvWelcome">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHadiths"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="48dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome">
 
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_card_glass">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card_glass">
 
-            <ImageView android:id="@+id/ivHadithIcon" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginBottom="12dp" android:src="@drawable/ic_mosque" android:contentDescription="@null" app:tint="@color/mistik_accent" app:layout_constraintBottom_toTopOf="@+id/tvHadithTitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+            <ImageView
+                android:id="@+id/ivHadithIcon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_mosque"
+                app:layout_constraintBottom_toTopOf="@+id/tvHadithTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:tint="@color/mistik_accent" />
 
-            <TextView android:id="@+id/tvHadithTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HADİSLER" android:textColor="@color/mistik_accent" android:textSize="22sp" android:textStyle="bold" android:letterSpacing="0.12" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ivHadithIcon" />
+            <TextView
+                android:id="@+id/tvHadithTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.12"
+                android:text="HADİSLER"
+                android:textColor="@color/mistik_accent"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivHadithIcon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <!-- Peygamberler Kartı - Glassmorphism -->
-    <androidx.cardview.widget.CardView android:id="@+id/cardProphets" android:layout_width="0dp" android:layout_height="150dp" android:layout_marginHorizontal="24dp" android:layout_marginTop="20dp" app:cardCornerRadius="24dp" app:cardElevation="12dp" app:cardBackgroundColor="@android:color/transparent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardHadiths">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProphets"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardHadiths">
 
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_card_glass">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_card_glass">
 
-            <ImageView android:id="@+id/imgProphet" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="10dp" android:src="@drawable/ic_mosque" app:tint="@color/mistik_accent_light" app:layout_constraintBottom_toTopOf="@+id/tvProphetTitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+            <ImageView
+                android:id="@+id/imgProphet"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_mosque"
+                app:layout_constraintBottom_toTopOf="@+id/tvProphetTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:tint="@color/mistik_accent_light" />
 
-            <TextView android:id="@+id/tvProphetTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PEYGAMBERLER" android:textColor="@color/mistik_accent_light" android:textSize="19sp" android:textStyle="bold" android:letterSpacing="0.1" android:fontFamily="sans-serif-medium" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imgProphet" />
+            <TextView
+                android:id="@+id/tvProphetTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.1"
+                android:text="PEYGAMBERLER"
+                android:textColor="@color/mistik_accent_light"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgProphet" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

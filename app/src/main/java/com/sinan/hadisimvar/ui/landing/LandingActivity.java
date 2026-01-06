@@ -3,7 +3,9 @@ package com.sinan.hadisimvar.ui.landing;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import androidx.cardview.widget.CardView;
+
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.ui.base.BaseActivity;
 import com.sinan.hadisimvar.ui.home.MainActivity;

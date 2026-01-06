@@ -20,7 +20,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
  * ═══════════════════════════════════════════════════════════════════
  * 💰 AdMob Reklam Yardımcı Sınıfı
  * ═══════════════════════════════════════════════════════════════════
- * 
+ * <p>
  * Bu sınıf Banner ve Interstitial reklamların yüklenmesini ve
  * gösterilmesini kolaylaştırır.
  */
@@ -56,7 +56,7 @@ public class AdHelper {
 
     /**
      * Banner reklamı yükler ve gösterir.
-     * 
+     *
      * @param activity    Reklam gösterilecek Activity
      * @param adContainer Banner'ın yerleştirileceği FrameLayout
      */
