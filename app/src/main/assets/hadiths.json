@@ -2434,5 +2434,381 @@
     "authenticity": "Sahih",
     "explanation": "Anne-babaya iyilik, cennete götüren en temel amellerdendir.",
     "topics": "Anne Baba,Hizmet,Cennet"
+  },
+  {
+    "content": "Namazı dosdoğru kılınız, zekatı veriniz ve müminin namazına eşlik ediniz.",
+    "source": "Buhârî, Ezan, 30",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Namaz ve zekat, İslam'ın temel ibadetleridir. Cemaatle namaz kılmak da büyük önem taşır.",
+    "topics": "Namaz,Zekat,Cemaat"
+  },
+  {
+    "content": "Kur'an'ı okuyunuz! Çünkü o, kıyamet gününde okuyucularına şefaatçi olarak gelecektir.",
+    "source": "Müslim, Müsâfirîn, 252",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Kur'an okumak, ahirette şefaat vesilesidir. Düzenli tilavet büyük sevaptır.",
+    "topics": "Kuran,Şefaat,Tilavet"
+  },
+  {
+    "content": "Oruç bir kalkandır. Oruçlu kimse kötü söz söylemesin ve cahilce davranmasın.",
+    "source": "Buhârî, Savm, 2",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Oruç sadece yeme içmeden değil, kötü söz ve davranışlardan da uzak durmaktır.",
+    "topics": "Oruç,Sabır,Ahlak"
+  },
+  {
+    "content": "Allah Teâlâ buyurdu: Oruç benim içindir ve onun mükafatını ben vereceğim.",
+    "source": "Buhârî, Savm, 9",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Orucun sevabı sınırsızdır çünkü mükafatını bizzat Allah verecektir.",
+    "topics": "Oruç,Sevap,Kudsi Hadis"
+  },
+  {
+    "content": "Ramazan girdiğinde cennetin kapıları açılır, cehennemin kapıları kapanır ve şeytanlar zincire vurulur.",
+    "source": "Buhârî, Savm, 5",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Ramazan ayı bereket ve rahmet ayıdır. İbadetler için en uygun zamandır.",
+    "topics": "Ramazan,Cennet,Rahmet"
+  },
+  {
+    "content": "Kim inanarak ve sevabını Allah'tan umarak Ramazan orucunu tutarsa, geçmiş günahları bağışlanır.",
+    "source": "Buhârî, Savm, 6",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Samimi niyetle tutulan Ramazan orucu, geçmiş günahların affına vesiledir.",
+    "topics": "Ramazan,Mağfiret,Oruç"
+  },
+  {
+    "content": "Kim inanarak ve sevabını Allah'tan umarak Kadir Gecesini ihya ederse, geçmiş günahları bağışlanır.",
+    "source": "Buhârî, Fadlu Leyleti'l-Kadr, 1",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Kadir Gecesi bin aydan hayırlıdır. Bu geceyi ibadetle geçirmek büyük mükafat getirir.",
+    "topics": "Kadir Gecesi,Mağfiret,İbadet"
+  },
+  {
+    "content": "Misvak kullanmak ağzı temizler, Rabbı razı eder.",
+    "source": "Buhârî, Savm, 27",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Misvak sünneti, hem temizlik hem de Allah'ın rızasını kazanmak içindir.",
+    "topics": "Misvak,Temizlik,Sünnet"
+  },
+  {
+    "content": "Bir kimse kardeşinin ihtiyacını giderirse, Allah da onun ihtiyacını giderir.",
+    "source": "Buhârî, Mezâlim, 3",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Yardımlaşma karşılıklıdır. Başkalarına yardım eden, Allah'ın yardımına mazhar olur.",
+    "topics": "Yardımlaşma,Kardeşlik,Bereket"
+  },
+  {
+    "content": "Kim bir müminin dünya sıkıntılarından birini giderirse, Allah da kıyamet sıkıntılarından birini giderir.",
+    "source": "Müslim, Zikir, 38",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Dünyada yapılan iyilikler, ahirette karşılığını bulur.",
+    "topics": "Yardım,Ahiret,Sıkıntı"
+  },
+  {
+    "content": "Her kim bir Müslümanın ayıbını örterse, Allah da kıyamet gününde onun ayıbını örter.",
+    "source": "Müslim, Birr, 72",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Başkalarının kusurlarını ifşa etmemek, Allah'ın affını kazandırır.",
+    "topics": "Setir,Ayıp,Affetmek"
+  },
+  {
+    "content": "Kıskançlıktan sakının. Çünkü kıskançlık, ateşin odunu yediği gibi iyilikleri yer bitirir.",
+    "source": "Ebû Dâvûd, Edeb, 44",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Haset, kalbi karartır ve sevapları yok eder. Bundan kaçınmak gerekir.",
+    "topics": "Haset,Kalp,Uyarı"
+  },
+  {
+    "content": "Cimrilikten sakının! Çünkü sizden öncekileri cimrilik helak etmiştir.",
+    "source": "Müslim, Birr, 56",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Cimrilik, toplumları yıkan tehlikeli bir huydur. Cömertlik ise kurtuluştur.",
+    "topics": "Cimrilik,Cömertlik,Uyarı"
+  },
+  {
+    "content": "Hayâ imandandır.",
+    "source": "Buhârî, İman, 16",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Utanma duygusu, imanın ayrılmaz bir parçasıdır ve kötülüklerden korur.",
+    "topics": "Haya,İman,Ahlak"
+  },
+  {
+    "content": "Hayâ sadece hayır getirir.",
+    "source": "Buhârî, Edeb, 77",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Utanma duygusu her zaman olumlu sonuçlar doğurur, hiçbir kötülüğe yol açmaz.",
+    "topics": "Haya,Hayır,Ahlak"
+  },
+  {
+    "content": "Günahtan dönmek tövbedir.",
+    "source": "Müsned, 1/432",
+    "source_category": "Müsned",
+    "authenticity": "Sahih",
+    "explanation": "Gerçek tövbe, sadece pişmanlık değil, günahı terk etmektir.",
+    "topics": "Tövbe,Günah,Dönüş"
+  },
+  {
+    "content": "Allah kulun tövbesine, çölde devesini kaybedip sonra bulan kişiden daha çok sevinir.",
+    "source": "Müslim, Tevbe, 1",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Allah tövbe eden kulunu çok sever ve affeder.",
+    "topics": "Tövbe,Rahmet,Sevinç"
+  },
+  {
+    "content": "Her gün iki melek iner ve biri 'Allah'ım! İnfak edene karşılığını ver!' der, diğeri 'Allah'ım! Cimrilik edeni telef et!' der.",
+    "source": "Buhârî, Zekât, 27",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Cömertlik bereket, cimrilik ise zarar getirir.",
+    "topics": "İnfak,Cömertlik,Dua"
+  },
+  {
+    "content": "Sıla-i rahimi (akraba ziyaretini) kesen cennete giremez.",
+    "source": "Buhârî, Edeb, 11",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Akraba ilişkilerini sürdürmek İslam'ın emridir.",
+    "topics": "Akraba,Sıla-i Rahim,Cennet"
+  },
+  {
+    "content": "Kim Allah'a kavuşmayı severse, Allah da ona kavuşmayı sever.",
+    "source": "Buhârî, Rikâk, 41",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Allah'a olan sevgi ve özlem karşılıklıdır.",
+    "topics": "Sevgi,Allah,Kavuşma"
+  },
+  {
+    "content": "Dünyaya rağbet etme ki Allah seni sevsin; insanların elindekine göz dikme ki insanlar seni sevsin.",
+    "source": "İbn Mâce, Zühd, 1",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Hasen",
+    "explanation": "Dünyadan uzak durmak Allah'ın sevgisini, tokgözlülük ise insanların sevgisini kazandırır.",
+    "topics": "Zühd,Sevgi,Kanaat"
+  },
+  {
+    "content": "Gece namazına devam ediniz! Çünkü o, sizden önceki salihlerin adetidir.",
+    "source": "Tirmizî, Daavat, 101",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Hasen",
+    "explanation": "Teheccüd namazı, manevi yükseliş için önemli bir ibadettir.",
+    "topics": "Teheccüd,Gece Namazı,Sünnet"
+  },
+  {
+    "content": "Secde, kulun Rabbine en yakın olduğu andır. Secdede çok dua ediniz.",
+    "source": "Müslim, Salât, 215",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Secde anı, kulun Allah'a en yakın olduğu zamandır. Bu anı dua ile değerlendirmek gerekir.",
+    "topics": "Secde,Dua,Namaz"
+  },
+  {
+    "content": "Bir mümin bir mümine kızamaz; eğer onun bir huyunu beğenmezse, başka bir huyunu beğenir.",
+    "source": "Müslim, Radâ', 61",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "İnsan kusurlarıyla bir bütündür. İyi yönleri görmek önemlidir.",
+    "topics": "Evlilik,Hoşgörü,Sabır"
+  },
+  {
+    "content": "Kadınlara yumuşak davranın; çünkü kadın eğe kemiğinden yaratılmıştır.",
+    "source": "Buhârî, Enbiyâ, 1",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Kadınlara nazik ve anlayışlı davranmak gerekir.",
+    "topics": "Kadın,Şefkat,Aile"
+  },
+  {
+    "content": "Dünya tatlı ve yeşildir. Allah sizi oraya halife kıldı ki nasıl davranacağınıza baksın.",
+    "source": "Müslim, Zikir, 99",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Dünya bir imtihan yeridir. İnsan burada nasıl davrandığıyla değerlendirilir.",
+    "topics": "Dünya,İmtihan,Halife"
+  },
+  {
+    "content": "Cennetin sekiz kapısı vardır. Bunlardan biri 'Reyyân'dır, oradan sadece oruç tutanlar girer.",
+    "source": "Buhârî, Savm, 4",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Oruç tutanlara özel bir cennet kapısı ayrılmıştır.",
+    "topics": "Cennet,Oruç,Reyyân"
+  },
+  {
+    "content": "Sübhanallah, Elhamdülillah, Lâilâheillallah ve Allahuekber demek, güneşin üzerine doğduğu her şeyden daha hayırlıdır.",
+    "source": "Müslim, Zikir, 32",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Zikir, dünya malından daha değerlidir.",
+    "topics": "Zikir,Tesbih,Sevap"
+  },
+  {
+    "content": "Lâ havle velâ kuvvete illâ billâh, cennet hazinelerinden bir hazinedir.",
+    "source": "Buhârî, Daavât, 50",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Bu zikir, manevi zenginlik ve cennet hazinesidir.",
+    "topics": "Zikir,Cennet,Tevekkül"
+  },
+  {
+    "content": "Fatiha suresi, Kur'an'ın anasıdır.",
+    "source": "Buhârî, Tefsir, Fatiha, 1",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Fatiha suresi, Kur'an'ın özeti ve en önemli suresidir.",
+    "topics": "Fatiha,Kuran,Namaz"
+  },
+  {
+    "content": "Ayetel Kürsi'yi okuyan sabaha kadar Allah'ın koruması altındadır.",
+    "source": "Buhârî, Vekâle, 10",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Ayetel Kürsi, şeytandan korunmak için en etkili ayettir.",
+    "topics": "Ayetel Kürsi,Koruma,Tilavet"
+  },
+  {
+    "content": "İhlas suresi Kur'an'ın üçte birine denktir.",
+    "source": "Buhârî, Fedâilü'l-Kur'ân, 13",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "İhlas suresi, tevhid inancını özetler ve büyük sevap kazandırır.",
+    "topics": "İhlas,Kuran,Tevhid"
+  },
+  {
+    "content": "Her kim sabah ve akşam üçer kere 'Bismillahillezi la yedurru measmihi şey'ün fil'ardı vela fissema' derse, ona hiçbir şey zarar veremez.",
+    "source": "Tirmizî, Daavat, 13",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Bu dua ile Allah'a sığınan korunmuş olur.",
+    "topics": "Dua,Koruma,Sığınma"
+  },
+  {
+    "content": "Gıybet, din kardeşini hoşlanmayacağı bir şeyle anmandır.",
+    "source": "Müslim, Birr, 70",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Arkadan konuşmak (gıybet), büyük günahlardandır.",
+    "topics": "Gıybet,Günah,Dil"
+  },
+  {
+    "content": "İftira ise, kardeşinde olmayan şeyleri söylemektir.",
+    "source": "Müslim, Birr, 70",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Yalan söylemek, gıybetten daha kötüdür ve iftira olur.",
+    "topics": "İftira,Yalan,Günah"
+  },
+  {
+    "content": "Üç şey kalıcıdır: İlim, amel ve hayırlı evlat.",
+    "source": "Müslim, Vasiyyet, 14",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "İnsan öldükten sonra bu üç şey sevap getirmeye devam eder.",
+    "topics": "Sadaka-i Cariye,İlim,Evlat"
+  },
+  {
+    "content": "İnsan öldüğünde ameli kesilir, ancak üç şey müstesna: Sadaka-i cariye, faydalanılan ilim ve kendisine dua eden hayırlı evlat.",
+    "source": "Müslim, Vasiyyet, 14",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Ölümden sonra sevap kazandıran üç amel budur.",
+    "topics": "Sadaka-i Cariye,Dua,Evlat"
+  },
+  {
+    "content": "Cennette bir ağaç vardır ki, gölgesinde bir yolcu yüz yıl yürüse bitiremez.",
+    "source": "Buhârî, Rikâk, 51",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Cennetin büyüklüğü ve nimetleri hayal edilemeyecek kadar geniştir.",
+    "topics": "Cennet,Nimet,Ahiret"
+  },
+  {
+    "content": "Allah adına yemin ederim ki, sizin en zengin olanınız en fakiriniz kadar bana sevimlidir.",
+    "source": "Müsned, 3/451",
+    "source_category": "Müsned",
+    "authenticity": "Sahih",
+    "explanation": "Hz. Peygamber'in gözünde zengin-fakir ayrımı yoktu.",
+    "topics": "Eşitlik,Adalet,Sevgi"
+  },
+  {
+    "content": "Cennete ilk girecek olanlar, fakirlerdir.",
+    "source": "Buhârî, Rikâk, 51",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Dünyada sabreden fakirler, ahirette ilk mükafatı alacaktır.",
+    "topics": "Fakir,Cennet,Sabır"
+  },
+  {
+    "content": "Yedi kişi vardır ki Allah onları, kendi gölgesinden başka gölge olmayan günde gölgesinde barındıracaktır.",
+    "source": "Buhârî, Ezan, 36",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Adaletli yönetici, ibadet eden genç, mescide bağlı kişi, birbirini seven iki kişi, iffetini koruyan kişi, gizli sadaka veren ve Allah'ı anıp ağlayan.",
+    "topics": "Arş,Gölge,Kıyamet"
+  },
+  {
+    "content": "Bir hurma ile de olsa sadaka verin; zira sadaka, sahibini cehennem ateşinden korur.",
+    "source": "Buhârî, Zekât, 10",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Az bile olsa sadaka vermek, cehennemden korur.",
+    "topics": "Sadaka,Cehennem,Yardım"
+  },
+  {
+    "content": "Rızkın onda dokuzu ticarettedir.",
+    "source": "Münâvi, Feyzü'l-Kadîr, 3/342",
+    "source_category": "Diğer",
+    "authenticity": "Zayıf",
+    "explanation": "Helal kazanç için ticaret önemli bir yoldur.",
+    "topics": "Ticaret,Rızık,Helal"
+  },
+  {
+    "content": "Dürüst tüccar, kıyamet gününde peygamberler, sıddıklar ve şehitlerle beraber olacaktır.",
+    "source": "Tirmizî, Büyû', 4",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Dürüst ticaret yapmak, yüce bir makamdır.",
+    "topics": "Ticaret,Dürüstlük,Ahiret"
+  },
+  {
+    "content": "Allah'ım! Kalbimi İslam üzere sabit kıl.",
+    "source": "Tirmizî, Daavat, 89",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Kalpleri çeviren Allah'tır. Ona yönelmek gerekir.",
+    "topics": "Dua,Kalp,Hidayet"
+  },
+  {
+    "content": "Kim sabah namazını cemaatle kılarsa, gece yarısına kadar Allah'ın koruması altındadır.",
+    "source": "Müslim, Mesâcid, 261",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Sabah namazını cemaatle kılmak, gün boyunca koruma sağlar.",
+    "topics": "Sabah Namazı,Cemaat,Koruma"
+  },
+  {
+    "content": "Beş vakit namaz, büyük günahlardan kaçınıldığı takdirde, aralarındaki küçük günahları siler.",
+    "source": "Müslim, Tahâret, 16",
+    "source_category": "Kütüb-i Sitte",
+    "authenticity": "Sahih",
+    "explanation": "Namaz, günlük günahları temizleyen bir ibadettir.",
+    "topics": "Namaz,Mağfiret,Kefaret"
   }
 ]
