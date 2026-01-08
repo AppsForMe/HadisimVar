@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadisim Var - Her Gün Yeni Bir Hadis</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0A0E27 0%, #141852 50%, #1E3A5F 100%);
+            color: #E8EAF6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+            background: rgba(255,255,255,0.08);
+            border-radius: 32px;
+            padding: 50px 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo { font-size: 80px; margin-bottom: 20px; }
+        h1 {
+            color: #FFD93D;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #C084FC;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #B0BEC5;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        .features li {
+            margin-bottom: 12px;
+            list-style: none;
+        }
+        .features li::before {
+            content: "✨ ";
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD93D, #F59E0B);
+            color: #0A0E27;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255,217,61,0.3);
+        }
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .links a {
+            color: #C084FC;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">📖</div>
+        <h1>Hadisim Var</h1>
+        <p class="subtitle">Her Gün Yeni Bir Hadis 🤲</p>
+        
+        <p>Güvenilir kaynaklardan (Buhari, Müslim, Tirmizi) derlenen sahih hadis-i şeriflerle dolu bir İslami yaşam arkadaşı.</p>
+        
+        <ul class="features">
+            <li>Günün Hadisi - Her gün farklı bir hadis-i şerif</li>
+            <li>150+ Sahih Hadis - Kütüb-i Sitte kaynaklı</li>
+            <li>Namaz Vakitleri - Konumunuza göre otomatik</li>
+            <li>Hicri Takvim - Günlük Hicri tarih</li>
+            <li>Favoriler - Sevdiğiniz hadisleri kaydedin</li>
+            <li>6 Farklı Tema - Göz yorgunluğunu önleyen tasarımlar</li>
+        </ul>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.sinan.hadisimvar" class="btn">
+            📱 Google Play'den İndir
+        </a>
+        
+        <div class="links">
+            <a href="privacy-policy.html">Gizlilik Politikası</a>
+            <a href="https://github.com/sinanalpagut/HadisimVar">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
