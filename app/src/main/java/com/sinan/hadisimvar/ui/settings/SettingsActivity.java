@@ -1,15 +1,21 @@
 package com.sinan.hadisimvar.ui.settings;
 
+import android.Manifest;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 import com.sinan.hadisimvar.R;
 import com.sinan.hadisimvar.ui.base.BaseActivity;
@@ -27,10 +33,33 @@ public class SettingsActivity extends BaseActivity {
     private RadioButton rbFontSmall, rbFontMedium, rbFontLarge;
     private SharedPreferences prefs;
 
+    // Bildirim izni bekleme değişkenleri
+    private int pendingNotificationHour = -1;
+    private int pendingNotificationMinute = -1;
+
     private static final String PREF_NAME = "settings_prefs";
     private static final String KEY_NOTIF_HOUR = "notif_hour";
     private static final String KEY_NOTIF_MINUTE = "notif_minute";
     public static final String KEY_FONT_SIZE = "font_size";
+
+    // Android 13+ için bildirim izni launcher
+    private final ActivityResultLauncher<String> requestNotificationPermissionLauncher = registerForActivityResult(
+            new ActivityResultContracts.RequestPermission(), isGranted -> {
+                if (isGranted) {
+                    // İzin verildi, bildirimi zamanla
+                    if (pendingNotificationHour >= 0) {
+                        saveTime(pendingNotificationHour, pendingNotificationMinute);
+                        updateTimeText(pendingNotificationHour, pendingNotificationMinute);
+                        NotificationScheduler.scheduleDaily(this, pendingNotificationHour, pendingNotificationMinute);
+                        Toast.makeText(this, "Bildirim saati güncellendi", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(this, "Bildirim izni verilmedi", Toast.LENGTH_SHORT).show();
+                }
+                // Reset
+                pendingNotificationHour = -1;
+                pendingNotificationMinute = -1;
+            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,6 +181,18 @@ public class SettingsActivity extends BaseActivity {
         int minute = prefs.getInt(KEY_NOTIF_MINUTE, 0);
 
         TimePickerDialog picker = new TimePickerDialog(this, (view, h, m) -> {
+            // Android 13+ için bildirim izni kontrolü
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                if (ContextCompat.checkSelfPermission(this,
+                        Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                    // İzin yok, iste
+                    pendingNotificationHour = h;
+                    pendingNotificationMinute = m;
+                    requestNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+                    return;
+                }
+            }
+            // İzin var veya Android 12 ve altı
             saveTime(h, m);
             updateTimeText(h, m);
             NotificationScheduler.scheduleDaily(this, h, m);
