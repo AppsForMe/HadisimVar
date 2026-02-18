@@ -45,7 +45,23 @@ public class AllHadithsActivity extends BaseActivity {
     }
 
     private void setupObservers() {
+        // Loading state - seed tamamlanana kadar ProgressBar göster
+        viewModel.getIsLoading().observe(this, isLoading -> {
+            if (Boolean.TRUE.equals(isLoading)) {
+                binding.progressBar.setVisibility(android.view.View.VISIBLE);
+                binding.recyclerView.setVisibility(android.view.View.GONE);
+                binding.tvEmpty.setVisibility(android.view.View.GONE);
+            } else {
+                binding.progressBar.setVisibility(android.view.View.GONE);
+            }
+        });
+
         viewModel.getFilteredHadiths().observe(this, hadiths -> {
+            // Loading bitmediyse listeyi gösterme
+            if (Boolean.TRUE.equals(viewModel.getIsLoading().getValue())) {
+                return;
+            }
+
             if (hadiths != null && !hadiths.isEmpty()) {
                 adapter.setHadithList(hadiths);
                 binding.tvEmpty.setVisibility(android.view.View.GONE);
@@ -82,7 +98,7 @@ public class AllHadithsActivity extends BaseActivity {
         spinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(android.widget.AdapterView<?> parent, android.view.View view, int position,
-                    long id) {
+                                       long id) {
                 String selected = (String) parent.getItemAtPosition(position);
                 viewModel.setFilter(selected);
             }
