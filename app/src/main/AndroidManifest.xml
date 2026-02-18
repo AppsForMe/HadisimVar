@@ -100,7 +100,8 @@
         <!-- Günlük Hadis Alarm Receiver -->
         <receiver
             android:name=".receivers.AlarmReceiver"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="MissingClass" />
 
         <!-- Boot Receiver - Cihaz yeniden başladığında alarmları geri yükler -->
         <receiver
