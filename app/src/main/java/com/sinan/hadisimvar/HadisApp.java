@@ -1,23 +1,23 @@
 package com.sinan.hadisimvar;
 
 import android.app.Application;
+import android.content.SharedPreferences;
+
+import com.sinan.hadisimvar.utils.NotificationHelper;
+import com.sinan.hadisimvar.utils.NotificationScheduler;
 
 public class HadisApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
         // Bildirim kanallarını oluştur
-        com.sinan.hadisimvar.utils.NotificationHelper.createNotificationChannels(this);
+        NotificationHelper.createNotificationChannels(this);
 
-        // Günlük Hadis Worker'ını başlat (Günde bir kez)
-        // Constraints eklenebilir (örneğin sadece şarjdayken vb. ama gerek yok)
-        androidx.work.PeriodicWorkRequest saveRequest = new androidx.work.PeriodicWorkRequest.Builder(
-                com.sinan.hadisimvar.workers.DailyHadithWorker.class, 24, java.util.concurrent.TimeUnit.HOURS)
-                .build();
-
-        androidx.work.WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-                "DailyHadithWork",
-                androidx.work.ExistingPeriodicWorkPolicy.KEEP,
-                saveRequest);
+        // AlarmManager ile günlük hadis bildirimini kur
+        // Kaydedilmiş saati oku (varsayılan: 09:00)
+        SharedPreferences prefs = getSharedPreferences("settings_prefs", MODE_PRIVATE);
+        int hour = prefs.getInt("notif_hour", 9);
+        int minute = prefs.getInt("notif_minute", 0);
+        NotificationScheduler.scheduleDaily(this, hour, minute);
     }
 }

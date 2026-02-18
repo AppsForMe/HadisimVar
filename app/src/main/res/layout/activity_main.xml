@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".ui.home.MainActivity">
 
     <!-- Header Area - Modern tasarım -->
@@ -91,124 +92,130 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardDailyHadith"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="24dp"
         app:cardElevation="12dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAllHadiths"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dateContainer"
-        app:layout_constraintVertical_bias="0.1">
+        app:layout_constraintTop_toBottomOf="@id/dateContainer">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_card_premium"
-            android:padding="28dp">
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
-            <!-- Başlık ve ikon -->
-            <LinearLayout
-                android:id="@+id/headerRow"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="parent">
+                android:background="@drawable/bg_card_premium"
+                android:padding="28dp">
 
-                <View
-                    android:layout_width="4dp"
-                    android:layout_height="24dp"
-                    android:background="?attr/colorPrimary" />
-
-                <TextView
-                    android:id="@+id/tvHadithTitle"
-                    android:layout_width="0dp"
+                <!-- Başlık ve ikon -->
+                <LinearLayout
+                    android:id="@+id/headerRow"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1"
-                    android:fontFamily="sans-serif-medium"
-                    android:letterSpacing="0.04"
-                    android:text="Günün Hadisi"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="18sp" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:alpha="0.7"
-                    android:contentDescription="@null"
-                    android:src="@drawable/ic_mosque"
-                    app:tint="?attr/colorPrimary" />
-            </LinearLayout>
+                    <View
+                        android:layout_width="4dp"
+                        android:layout_height="24dp"
+                        android:background="?attr/colorPrimary" />
 
-            <!-- Hadis İçeriği - Lacivert -->
-            <TextView
-                android:id="@+id/tvHadithContent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="serif"
-                android:lineSpacingMultiplier="1.4"
-                android:text="Yükleniyor..."
-                android:textColor="@color/mistik_primary"
-                android:textSize="19sp"
-                app:layout_constraintTop_toBottomOf="@id/headerRow" />
+                    <TextView
+                        android:id="@+id/tvHadithTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:letterSpacing="0.04"
+                        android:text="Günün Hadisi"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="18sp" />
 
-            <!-- Kaynak -->
-            <TextView
-                android:id="@+id/tvHadithSource"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="sans-serif-light"
-                android:text=""
-                android:textColor="@color/mistik_accent_dark"
-                android:textSize="14sp"
-                android:textStyle="italic"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvHadithContent" />
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:alpha="0.7"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_mosque"
+                        app:tint="?attr/colorPrimary" />
+                </LinearLayout>
 
-            <!-- Aksiyon Butonları - Modern tasarım -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:gravity="end"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvHadithSource">
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnShare"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:text="Paylaş"
+                <!-- Hadis İçeriği - Lacivert -->
+                <TextView
+                    android:id="@+id/tvHadithContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:lineSpacingMultiplier="1.4"
+                    android:text="Yükleniyor..."
                     android:textColor="@color/mistik_primary"
-                    android:textSize="13sp"
-                    app:cornerRadius="12dp"
-                    app:icon="@drawable/ic_share"
-                    app:iconSize="18dp"
-                    app:iconTint="@color/mistik_primary" />
+                    android:textSize="19sp"
+                    app:layout_constraintTop_toBottomOf="@id/headerRow" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnFavorite"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                <!-- Kaynak -->
+                <TextView
+                    android:id="@+id/tvHadithSource"
                     android:layout_width="wrap_content"
-                    android:layout_height="44dp"
-                    android:layout_marginStart="8dp"
-                    android:textColor="@color/coral_red"
-                    android:textSize="13sp"
-                    app:cornerRadius="12dp"
-                    app:icon="@drawable/ic_favorite_border"
-                    app:iconSize="20dp"
-                    app:iconTint="@color/coral_red" />
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text=""
+                    android:textColor="@color/mistik_accent_dark"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHadithContent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <!-- Aksiyon Butonları - Modern tasarım -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvHadithSource">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnShare"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:text="Paylaş"
+                        android:textColor="@color/mistik_primary"
+                        android:textSize="13sp"
+                        app:cornerRadius="12dp"
+                        app:icon="@drawable/ic_share"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/mistik_primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFavorite"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/coral_red"
+                        android:textSize="13sp"
+                        app:cornerRadius="12dp"
+                        app:icon="@drawable/ic_favorite_border"
+                        app:iconSize="20dp"
+                        app:iconTint="@color/coral_red" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 
     <!-- Tüm Hadisler Butonu - Modern tasarım -->
@@ -478,4 +485,3 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

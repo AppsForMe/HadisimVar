@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<?xml version="1.0" encoding="utf-8"?><!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- 🔘 MODERN GERİ BUTONU - Neon Glow Efekti                        -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#40FFFFFF">
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#40FFFFFF">
 
     <item android:id="@android:id/mask">
         <shape android:shape="rectangle">
@@ -20,7 +20,9 @@
             <corners android:radius="24dp" />
 
             <!-- Neon kenarlık efekti -->
-            <stroke android:width="1.5dp" android:color="#40C084FC" />
+            <stroke
+                android:width="1.5dp"
+                android:color="#40C084FC" />
         </shape>
     </item>
 </ripple>

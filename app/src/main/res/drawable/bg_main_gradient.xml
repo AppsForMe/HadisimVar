@@ -1,24 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- ═══════════════════════════════════════════════════════════════ -->
+<?xml version="1.0" encoding="utf-8"?><!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- 🌌 PREMIUM GRADIENT - Kozmik Lacivert + Aurora Efekti          -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- Ana gradient - Derin uzay mavisi -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:angle="160" android:startColor="#0A0E27" android:centerColor="#141852" android:endColor="#1E3A5F" android:type="linear" />
+            <gradient
+                android:angle="160"
+                android:centerColor="#141852"
+                android:endColor="#1E3A5F"
+                android:startColor="#0A0E27"
+                android:type="linear" />
         </shape>
     </item>
     <!-- Mor/Pembe aurora efekti -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:angle="45" android:startColor="#08FF6B9D" android:centerColor="#00C084FC" android:endColor="#05667EEA" android:type="linear" />
+            <gradient
+                android:angle="45"
+                android:centerColor="#00C084FC"
+                android:endColor="#05667EEA"
+                android:startColor="#08FF6B9D"
+                android:type="linear" />
         </shape>
     </item>
     <!-- Altın parıltı overlay -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:angle="315" android:startColor="#15FFD93D" android:endColor="#00F59E0B" android:type="linear" />
+            <gradient
+                android:angle="315"
+                android:endColor="#00F59E0B"
+                android:startColor="#15FFD93D"
+                android:type="linear" />
         </shape>
     </item>
 </layer-list>
