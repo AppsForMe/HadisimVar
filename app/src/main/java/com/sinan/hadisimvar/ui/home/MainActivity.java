@@ -330,7 +330,7 @@ public class MainActivity extends BaseActivity {
         int hijriDay = l - (709 * hijriMonth) / 24;
         int hijriYear = 30 * n + j - 30;
 
-        return new int[] { hijriYear, hijriMonth, hijriDay };
+        return new int[]{hijriYear, hijriMonth, hijriDay};
     }
 
     @Override
